@@ -161,4 +161,7 @@ overall_sorted$reward = factor(overall_sorted$reward)
 #Return the minimum risk for each reward factor
 overall_perfect = overall_sorted %>% group_by(reward) %>% summarize(risk = min(risk))
 
+#Plot the risk-return points
+plot(overall_perfect)
+
 
